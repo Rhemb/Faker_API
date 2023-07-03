@@ -1,5 +1,9 @@
+const NewUser = require("../models/NewUser");
+const NewCompany = require("../models/NewCompany");
+const CompanyAndUser = require("../models/CompanyAndUser");
+
 module.exports = {
-    newUser : (req, res) => { res.json({})},
-    newCompany : (req, res) => { res.json({})},
-    info : (req, res) => { res.json({})}
+    newUser : (req, res) => { return res.json(NewUser); },
+    newCompany : (req, res) => { return res.json(NewCompany) },
+    info : (req, res) => { return res.json(CompanyAndUser)}
 }
