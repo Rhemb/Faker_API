@@ -1,7 +1,7 @@
 const { faker } = require('@faker-js/faker');
 
-const createCompany = () => {
-    const newCompany = {
+module.exports = [
+    {
         _id: faker.number.int(10),
         name: faker.company.name(),
         address: {
@@ -11,12 +11,8 @@ const createCompany = () => {
             zipCode: faker.location.zipCode(),
             country: faker.location.country()
         }
-    }
-    return newCompany;
-}
-
-const createUser = () => {
-    const newUser = {
+    },
+    {
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
         email: faker.internet.email(),
@@ -24,8 +20,4 @@ const createUser = () => {
         phoneNumber: faker.phone.number(),
         _id: faker.number.int(10)
     }
-    return newUser;
-}
-
-console.log(createUser());
-console.log(createCompany());
+]

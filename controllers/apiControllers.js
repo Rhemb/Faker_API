@@ -4,6 +4,6 @@ const CompanyAndUser = require("../models/CompanyAndUser");
 
 module.exports = {
     newUser : (req, res) => { return res.json(NewUser); },
-    newCompany : (req, res) => { return res.json(NewCompany) },
-    info : (req, res) => { return res.json(CompanyAndUser)}
+    newCompany : (req, res) => { return res.json(NewCompany); },
+    info : (req, res) => { return res.json(CompanyAndUser); }
 }
